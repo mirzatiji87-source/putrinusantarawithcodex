@@ -1,0 +1,377 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Putri Nusantara menghadirkan green bean kopi Indonesia pilihan ke pasar internasional secara bertanggung jawab."
+    />
+    <title>Putri Nusantara | Premium Indonesian Coffee Export</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body class="home-page">
+    <div class="site-loader" id="site-loader" aria-hidden="true">
+      <div class="loader-mark"><span></span><span></span></div>
+      <p>Putri Nusantara</p>
+    </div>
+
+    <header class="site-header" id="top">
+      <div class="container nav-wrap">
+        <a
+          class="brand"
+          href="index.html"
+          aria-label="Putri Nusantara, kembali ke beranda"
+        >
+          <img src="assets/logo-putri.jpeg" alt="" width="44" height="44" />
+          <span>Putri <strong>Nusantara</strong></span>
+        </a>
+
+        <button
+          class="menu-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="primary-navigation"
+          aria-label="Buka navigasi"
+        >
+          <span></span><span></span><span></span>
+        </button>
+
+        <nav
+          class="primary-nav"
+          id="primary-navigation"
+          aria-label="Navigasi utama"
+        >
+          <a class="active" href="index.html">Beranda</a>
+          <a href="about.html">Tentang Kami</a>
+          <a href="product.html">Produk</a>
+          <a href="contact.html">Kontak</a>
+          <!-- Trigger form permintaan (modal). Tempel tombol ini juga di navbar about/product/contact.html -->
+          <button type="button" class="nav-request-btn" data-open-request>
+            <span>Ajukan Permintaan</span>
+          </button>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" id="beranda" aria-labelledby="hero-title">
+        <div class="hero-media" aria-hidden="true">
+          <img
+            class="hero-background"
+            data-parallax
+            src="assets/indonesian-coffee-farmer.png"
+            alt=""
+            fetchpriority="high"
+          />
+        </div>
+        <div class="hero-scrim" aria-hidden="true"></div>
+        <div class="hero-orbit orbit-one" aria-hidden="true"></div>
+        <div class="hero-orbit orbit-two" aria-hidden="true"></div>
+        <div class="container hero-content">
+          <p class="eyebrow light reveal" data-reveal="fade-up">
+            Dari Nusantara untuk dunia
+          </p>
+          <h1 id="hero-title" class="reveal" data-reveal="fade-up">
+            Welcome to <em>Putri Nusantara</em>
+          </h1>
+          <p class="hero-kicker reveal" data-reveal="fade-up">
+            Premium Indonesian Coffee Export Company
+          </p>
+          <p class="hero-copy reveal" data-reveal="fade-up">
+            Membawa karakter terbaik kopi Indonesia dari kebun pilihan menuju
+            mitra global, dengan kualitas yang terukur dan relasi yang
+            berkelanjutan.
+          </p>
+          <div class="hero-actions reveal" data-reveal="fade-up">
+            <a class="button button-gold" href="product.html"
+              >Explore Products <span aria-hidden="true">↗</span></a
+            >
+            <a class="button button-ghost" href="contact.html"
+              >Contact Us <span aria-hidden="true">→</span></a
+            >
+          </div>
+          <a
+            class="scroll-cue"
+            href="#tentang-singkat"
+            aria-label="Gulir ke tentang kami singkat"
+          >
+            <span></span>
+            Scroll to discover
+          </a>
+        </div>
+      </section>
+
+      <section
+        class="intro-section section"
+        id="tentang-singkat"
+        aria-labelledby="intro-title"
+      >
+        <div class="container intro-grid">
+          <div class="intro-image-wrap reveal" data-reveal="fade-right">
+            <div class="image-accent" aria-hidden="true"></div>
+
+            <!-- Slider perjalanan kopi: bibit -> kebun -> proses perawatan -->
+            <figure
+              class="editorial-image editorial-slider"
+              id="originSlider"
+              data-autoplay="5000"
+              aria-roledescription="carousel"
+              aria-label="Perjalanan kopi Putri Nusantara"
+            >
+              <div class="slider-track">
+                <div class="slide is-active" data-caption="Dari bibit pilihan">
+                  <img
+                    src="assets/galeri6.jpeg"
+                    alt="Pembibitan kopi Putri Nusantara"
+                    loading="lazy"
+                  />
+                </div>
+                <div class="slide" data-caption="Kebun yang terus tumbuh">
+                  <img
+                    src="assets/galeri4.jpeg"
+                    alt="Kebun kopi Putri Nusantara yang subur"
+                    loading="lazy"
+                  />
+                </div>
+                <div class="slide" data-caption="Dirawat dengan telaten">
+                  <img
+                    src="assets/coffee-plantation.png"
+                    alt="Tanaman kopi yang dirawat dengan telaten"
+                    loading="lazy"
+                  />
+                </div>
+              </div>
+
+              <button
+                class="slider-arrow prev"
+                type="button"
+                data-slider-prev
+                aria-label="Slide sebelumnya"
+              >
+                ‹
+              </button>
+              <button
+                class="slider-arrow next"
+                type="button"
+                data-slider-next
+                aria-label="Slide berikutnya"
+              >
+                ›
+              </button>
+
+              <figcaption>
+                <span class="fig-line"></span>
+                <span class="slide-caption-text">Dari bibit pilihan</span>
+              </figcaption>
+
+              <div
+                class="slider-dots"
+                role="tablist"
+                aria-label="Pilih slide perjalanan kopi"
+              >
+                <button
+                  class="dot is-active"
+                  type="button"
+                  role="tab"
+                  aria-selected="true"
+                  aria-label="Slide 1: bibit"
+                ></button>
+                <button
+                  class="dot"
+                  type="button"
+                  role="tab"
+                  aria-selected="false"
+                  aria-label="Slide 2: kebun"
+                ></button>
+                <button
+                  class="dot"
+                  type="button"
+                  role="tab"
+                  aria-selected="false"
+                  aria-label="Slide 3: perawatan"
+                ></button>
+              </div>
+            </figure>
+
+            <div class="image-badge glass-card">
+              <strong>100%</strong>
+              <span>Indonesian<br />origin</span>
+            </div>
+          </div>
+
+          <div class="intro-copy reveal" data-reveal="fade-left">
+            <p class="eyebrow">Tentang Kami</p>
+            <h2 id="intro-title">
+              Rooted in origin.<br /><em>Ready for the world.</em>
+            </h2>
+            <p>
+              Putri Nusantara adalah perusahaan ekspor kopi Indonesia yang
+              berkomitmen menghadirkan green bean berkualitas tinggi dari petani
+              lokal ke pasar internasional.
+            </p>
+            <p>
+              Kami menjaga setiap tahap perjalanan kopi—dari pemilihan asal,
+              kurasi mutu, hingga kesiapan ekspor—dengan fondasi kualitas,
+              kepercayaan, dan keberlanjutan.
+            </p>
+            <div class="trust-points">
+              <div>
+                <span class="point-icon" aria-hidden="true">01</span>
+                <p>
+                  <strong>Curated origins</strong><br />Terhubung dengan kebun
+                  dan komunitas pilihan.
+                </p>
+              </div>
+              <div>
+                <span class="point-icon" aria-hidden="true">02</span>
+                <p>
+                  <strong>Export mindset</strong><br />Setiap lot disiapkan
+                  dengan perhatian pada detail.
+                </p>
+              </div>
+            </div>
+            <a class="text-link" href="about.html"
+              >Meet Putri Nusantara <span aria-hidden="true">→</span></a
+            >
+          </div>
+        </div>
+      </section>
+
+      <section class="commitment-band" aria-label="Komitmen Putri Nusantara">
+        <div class="container commitment-grid">
+          <p class="eyebrow light reveal" data-reveal="fade-up">
+            Our commitment
+          </p>
+          <p class="commitment-text reveal" data-reveal="zoom-in">
+            Kopi yang bernilai bukan hanya tentang rasa. Ia tumbuh dari
+            <em>ketelitian, kemitraan, dan rasa hormat</em> terhadap asalnya.
+          </p>
+          <a
+            class="round-link reveal"
+            data-reveal="fade-left"
+            href="contact.html"
+            aria-label="Hubungi Putri Nusantara"
+          >
+            <span>Start a<br />conversation</span>
+            <b aria-hidden="true">↗</b>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-main">
+        <a
+          class="brand footer-brand"
+          href="index.html"
+          aria-label="Putri Nusantara, beranda"
+        >
+          <img src="assets/logo-putri.jpeg" alt="" width="44" height="44" />
+          <span>Putri <strong>Nusantara</strong></span>
+        </a>
+        <p>
+          Premium Indonesian coffee, thoughtfully sourced for the global market.
+        </p>
+        <div class="social-links" aria-label="Media sosial">
+          <a href="#" aria-label="Instagram" title="Instagram"
+            ><svg viewBox="0 0 24 24" aria-hidden="true">
+              <rect x="3" y="3" width="18" height="18" rx="5"></rect>
+              <circle cx="12" cy="12" r="4"></circle>
+              <circle cx="17.5" cy="6.5" r="1"></circle></svg
+          ></a>
+          <a href="#" aria-label="Facebook" title="Facebook"
+            ><svg viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                d="M14.5 21v-8h2.8l.4-3h-3.2V8.1c0-.9.3-1.6 1.7-1.6H18V3.8c-.3 0-1.4-.1-2.6-.1-2.6 0-4.4 1.6-4.4 4.5V10H8v3h3v8h3.5Z"
+              ></path></svg
+          ></a>
+          <a href="#" aria-label="LinkedIn" title="LinkedIn"
+            ><svg viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                d="M6.3 8.3H3V21h3.3V8.3ZM4.7 3A1.9 1.9 0 1 0 4.7 6.8 1.9 1.9 0 0 0 4.7 3ZM21 13.7c0-3.8-2-5.6-4.8-5.6-2.2 0-3.2 1.2-3.8 2V8.3H9.1V21h3.3v-6.3c0-1.7.3-3.4 2.4-3.4 2.1 0 2.1 2 2.1 3.5V21H21v-7.3Z"
+              ></path></svg
+          ></a>
+        </div>
+      </div>
+      <div class="container footer-bottom">
+        <small>Copyright © 2026 Putri Nusantara. All Rights Reserved.</small>
+        <a href="#top">Back to top <span aria-hidden="true">↑</span></a>
+      </div>
+    </footer>
+
+    <button class="scroll-top" type="button" aria-label="Kembali ke atas">
+      <span aria-hidden="true">↑</span>
+    </button>
+
+    <!-- Modal form permintaan. Tempel blok ini juga sebelum </body> di about/product/contact.html -->
+    <div class="request-modal" id="requestModal" aria-hidden="true">
+      <div class="request-modal-overlay" data-close-request></div>
+      <div
+        class="request-modal-panel"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="requestModalTitle"
+      >
+        <button
+          type="button"
+          class="request-modal-close"
+          data-close-request
+          aria-label="Tutup form permintaan"
+        >
+          ×
+        </button>
+        <p class="eyebrow">Ajukan Permintaan</p>
+        <h3 id="requestModalTitle">Ceritakan kebutuhan Anda</h3>
+        <p class="request-modal-lead">
+          Isi form singkat ini, permintaan Anda akan langsung dibuka lewat
+          aplikasi email menuju tim kami.
+        </p>
+
+        <form id="requestForm" novalidate>
+          <div class="form-field">
+            <label for="reqName">Nama</label>
+            <input
+              type="text"
+              id="reqName"
+              name="name"
+              autocomplete="name"
+              required
+            />
+          </div>
+          <div class="form-field">
+            <label for="reqEmail">Email</label>
+            <input
+              type="email"
+              id="reqEmail"
+              name="email"
+              autocomplete="email"
+              required
+            />
+          </div>
+          <div class="form-field">
+            <label for="reqMessage">Permintaan</label>
+            <textarea
+              id="reqMessage"
+              name="message"
+              rows="4"
+              required
+            ></textarea>
+          </div>
+          <button type="submit" class="button button-primary request-submit">
+            Kirim Permintaan <span aria-hidden="true">→</span>
+          </button>
+          <p class="request-modal-note" id="requestModalNote" role="status"></p>
+        </form>
+      </div>
+    </div>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
