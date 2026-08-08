@@ -48,13 +48,13 @@
           id="primary-navigation"
           aria-label="Navigasi utama"
         >
-          <a class="active" href="index.html">Beranda</a>
-          <a href="about.html">Tentang Kami</a>
-          <a href="product.html">Produk</a>
-          <a href="contact.html">Kontak</a>
+          <a class="active" href="index.html" data-i18n="nav.beranda">Beranda</a>
+          <a href="about.html" data-i18n="nav.about">Tentang Kami</a>
+          <a href="product.html" data-i18n="nav.product">Produk</a>
+          <a href="contact.html" data-i18n="nav.contact">Kontak</a>
           <!-- Trigger form permintaan (modal). Tempel tombol ini juga di navbar about/product/contact.html -->
           <button type="button" class="nav-request-btn" data-open-request>
-            <span>Ajukan Permintaan</span>
+            <span data-i18n="nav.request">Ajukan Permintaan</span>
           </button>
         </nav>
       </div>
@@ -75,26 +75,26 @@
         <div class="hero-orbit orbit-one" aria-hidden="true"></div>
         <div class="hero-orbit orbit-two" aria-hidden="true"></div>
         <div class="container hero-content">
-          <p class="eyebrow light reveal" data-reveal="fade-up">
+          <p class="eyebrow light reveal" data-reveal="fade-up" data-i18n="index.hero.eyebrow">
             Dari Nusantara untuk dunia
           </p>
-          <h1 id="hero-title" class="reveal" data-reveal="fade-up">
-            Welcome to <em>Putri Nusantara</em>
+          <h1 id="hero-title" class="reveal" data-reveal="fade-up" data-i18n="index.hero.title">
+            Selamat Datang di <em>Putri Nusantara</em>
           </h1>
-          <p class="hero-kicker reveal" data-reveal="fade-up">
-            Premium Indonesian Coffee Export Company
+          <p class="hero-kicker reveal" data-reveal="fade-up" data-i18n="index.hero.kicker">
+            Perusahaan Ekspor Kopi Indonesia Premium
           </p>
-          <p class="hero-copy reveal" data-reveal="fade-up">
+          <p class="hero-copy reveal" data-reveal="fade-up" data-i18n="index.hero.copy">
             Membawa karakter terbaik kopi Indonesia dari kebun pilihan menuju
             mitra global, dengan kualitas yang terukur dan relasi yang
             berkelanjutan.
           </p>
           <div class="hero-actions reveal" data-reveal="fade-up">
-            <a class="button button-gold" href="product.html"
-              >Explore Products <span aria-hidden="true">↗</span></a
+            <a class="button button-gold" href="product.html" data-i18n="index.hero.explore"
+              >Lihat Produk <span aria-hidden="true">↗</span></a
             >
-            <a class="button button-ghost" href="contact.html"
-              >Contact Us <span aria-hidden="true">→</span></a
+            <a class="button button-ghost" href="contact.html" data-i18n="index.hero.contact"
+              >Hubungi Kami <span aria-hidden="true">→</span></a
             >
           </div>
           <a
@@ -103,7 +103,7 @@
             aria-label="Gulir ke tentang kami singkat"
           >
             <span></span>
-            Scroll to discover
+            <span data-i18n="index.hero.scroll">Gulir untuk menjelajahi</span>
           </a>
         </div>
       </section>
@@ -202,21 +202,21 @@
 
             <div class="image-badge glass-card">
               <strong>100%</strong>
-              <span>Indonesian<br />origin</span>
+              <span data-i18n="index.badge.label">Asli<br />Indonesia</span>
             </div>
           </div>
 
           <div class="intro-copy reveal" data-reveal="fade-left">
-            <p class="eyebrow">Tentang Kami</p>
-            <h2 id="intro-title">
-              Rooted in origin.<br /><em>Ready for the world.</em>
+            <p class="eyebrow" data-i18n="index.intro.eyebrow">Tentang Kami</p>
+            <h2 id="intro-title" data-i18n="index.intro.title">
+              Berakar dari asal.<br /><em>Siap untuk dunia.</em>
             </h2>
-            <p>
+            <p data-i18n="index.intro.p1">
               Putri Nusantara adalah perusahaan ekspor kopi Indonesia yang
               berkomitmen menghadirkan green bean berkualitas tinggi dari petani
               lokal ke pasar internasional.
             </p>
-            <p>
+            <p data-i18n="index.intro.p2">
               Kami menjaga setiap tahap perjalanan kopi—dari pemilihan asal,
               kurasi mutu, hingga kesiapan ekspor—dengan fondasi kualitas,
               kepercayaan, dan keberlanjutan.
@@ -224,44 +224,34 @@
             <div class="trust-points">
               <div>
                 <span class="point-icon" aria-hidden="true">01</span>
-                <p>
-                  <strong>Curated origins</strong><br />Terhubung dengan kebun
-                  dan komunitas pilihan.
+                <p data-i18n="index.intro.trust1">
+                  <strong>Asal pilihan</strong><br />Terhubung dengan kebun dan
+                  komunitas pilihan.
                 </p>
               </div>
               <div>
                 <span class="point-icon" aria-hidden="true">02</span>
-                <p>
-                  <strong>Export mindset</strong><br />Setiap lot disiapkan
+                <p data-i18n="index.intro.trust2">
+                  <strong>Berorientasi ekspor</strong><br />Setiap lot disiapkan
                   dengan perhatian pada detail.
                 </p>
               </div>
             </div>
-            <a class="text-link" href="about.html"
-              >Meet Putri Nusantara <span aria-hidden="true">→</span></a
+            <a class="text-link" href="about.html" data-i18n="index.intro.link"
+              >Kenali Putri Nusantara <span aria-hidden="true">→</span></a
             >
           </div>
         </div>
       </section>
 
-      <section class="commitment-band" aria-label="Komitmen Putri Nusantara">
-        <div class="container commitment-grid">
-          <p class="eyebrow light reveal" data-reveal="fade-up">
-            Our commitment
-          </p>
-          <p class="commitment-text reveal" data-reveal="zoom-in">
-            Kopi yang bernilai bukan hanya tentang rasa. Ia tumbuh dari
-            <em>ketelitian, kemitraan, dan rasa hormat</em> terhadap asalnya.
-          </p>
-          <a
-            class="round-link reveal"
-            data-reveal="fade-left"
-            href="contact.html"
-            aria-label="Hubungi Putri Nusantara"
-          >
-            <span>Start a<br />conversation</span>
-            <b aria-hidden="true">↗</b>
-          </a>
+      <!-- Section jangkauan ekspor: peta polos, mengganti quote sebelumnya -->
+      <section class="map-band" aria-label="Jangkauan ekspor Putri Nusantara">
+        <div class="container map-band-inner reveal" data-reveal="zoom-in">
+          <img
+            src="assets/map.webp"
+            alt="Peta jalur distribusi kopi Putri Nusantara dari Indonesia ke pasar global"
+            loading="lazy"
+          />
         </div>
       </section>
     </main>
@@ -276,8 +266,9 @@
           <img src="assets/logo-putri.jpeg" alt="" width="44" height="44" />
           <span>Putri <strong>Nusantara</strong></span>
         </a>
-        <p>
-          Premium Indonesian coffee, thoughtfully sourced for the global market.
+        <p data-i18n="footer.tagline">
+          Kopi Indonesia premium, dipilih dengan penuh perhatian untuk pasar
+          global.
         </p>
         <div class="social-links" aria-label="Media sosial">
           <a href="#" aria-label="Instagram" title="Instagram"
@@ -301,8 +292,12 @@
         </div>
       </div>
       <div class="container footer-bottom">
-        <small>Copyright © 2026 Putri Nusantara. All Rights Reserved.</small>
-        <a href="#top">Back to top <span aria-hidden="true">↑</span></a>
+        <small
+          data-i18n="footer.copyright"
+          >Copyright © 2026 Putri Nusantara. Seluruh hak cipta
+          dilindungi.</small
+        >
+        <a href="#top" data-i18n="footer.backtotop">Kembali ke atas <span aria-hidden="true">↑</span></a>
       </div>
     </footer>
 
@@ -327,16 +322,16 @@
         >
           ×
         </button>
-        <p class="eyebrow">Ajukan Permintaan</p>
-        <h3 id="requestModalTitle">Ceritakan kebutuhan Anda</h3>
-        <p class="request-modal-lead">
+        <p class="eyebrow" data-i18n="modal.eyebrow">Ajukan Permintaan</p>
+        <h3 id="requestModalTitle" data-i18n="modal.title">Ceritakan kebutuhan Anda</h3>
+        <p class="request-modal-lead" data-i18n="modal.lead">
           Isi form singkat ini, permintaan Anda akan langsung dibuka lewat
           aplikasi email menuju tim kami.
         </p>
 
         <form id="requestForm" novalidate>
           <div class="form-field">
-            <label for="reqName">Nama</label>
+            <label for="reqName" data-i18n="modal.label.name">Nama</label>
             <input
               type="text"
               id="reqName"
@@ -346,7 +341,7 @@
             />
           </div>
           <div class="form-field">
-            <label for="reqEmail">Email</label>
+            <label for="reqEmail" data-i18n="modal.label.email">Email</label>
             <input
               type="email"
               id="reqEmail"
@@ -356,7 +351,7 @@
             />
           </div>
           <div class="form-field">
-            <label for="reqMessage">Permintaan</label>
+            <label for="reqMessage" data-i18n="modal.label.message">Permintaan</label>
             <textarea
               id="reqMessage"
               name="message"
@@ -364,7 +359,7 @@
               required
             ></textarea>
           </div>
-          <button type="submit" class="button button-primary request-submit">
+          <button type="submit" class="button button-primary request-submit" data-i18n="modal.submit">
             Kirim Permintaan <span aria-hidden="true">→</span>
           </button>
           <p class="request-modal-note" id="requestModalNote" role="status"></p>
@@ -373,5 +368,6 @@
     </div>
 
     <script src="js/script.js"></script>
+    <script src="js/i18n.js"></script>
   </body>
 </html>

@@ -49,11 +49,11 @@
           id="primary-navigation"
           aria-label="Navigasi utama"
         >
-          <a href="index.html">Beranda</a
-          ><a class="active" href="about.html">Tentang Kami</a
-          ><a href="product.html">Produk</a><a href="contact.html">Kontak</a>
+          <a href="index.html" data-i18n="nav.beranda">Beranda</a
+          ><a class="active" href="about.html" data-i18n="nav.about">Tentang Kami</a
+          ><a href="product.html" data-i18n="nav.product">Produk</a><a href="contact.html" data-i18n="nav.contact">Kontak</a>
           <button type="button" class="nav-request-btn" data-open-request>
-            <span>Ajukan Permintaan</span>
+            <span data-i18n="nav.request">Ajukan Permintaan</span>
           </button>
         </nav>
       </div>
@@ -64,16 +64,16 @@
         <div class="page-hero-pattern" aria-hidden="true"></div>
         <div class="container page-hero-content">
           <p class="breadcrumb reveal" data-reveal="fade-up">
-            <a href="index.html">Beranda</a
-            ><span aria-hidden="true">/</span> Tentang Kami
+            <a href="index.html" data-i18n="nav.beranda">Beranda</a
+            ><span aria-hidden="true">/</span> <span data-i18n="about.breadcrumb">Tentang Kami</span>
           </p>
-          <p class="eyebrow light reveal" data-reveal="fade-up">Our story</p>
-          <h1 id="about-title" class="reveal" data-reveal="fade-up">
-            About <em>Putri Nusantara</em>
+          <p class="eyebrow light reveal" data-reveal="fade-up" data-i18n="about.hero.eyebrow">Kisah kami</p>
+          <h1 id="about-title" class="reveal" data-reveal="fade-up" data-i18n="about.hero.title">
+            Tentang <em>Putri Nusantara</em>
           </h1>
-          <p class="page-hero-lead reveal" data-reveal="fade-up">
-            A trusted bridge between Indonesia’s remarkable coffee origins and
-            the world’s most discerning buyers.
+          <p class="page-hero-lead reveal" data-reveal="fade-up" data-i18n="about.hero.lead">
+            Jembatan tepercaya antara asal kopi Indonesia yang istimewa dengan
+            para pembeli terbaik di dunia.
           </p>
         </div>
       </section>
@@ -81,26 +81,27 @@
       <section class="section story-section" aria-labelledby="story-title">
         <div class="container story-grid">
           <div class="story-copy reveal" data-reveal="fade-right">
-            <p class="eyebrow">Who we are</p>
-            <h2 id="story-title">
-              A better export journey starts at <em>the origin.</em>
+            <p class="eyebrow" data-i18n="about.story.eyebrow">Siapa kami</p>
+            <h2 id="story-title" data-i18n="about.story.title">
+              Perjalanan ekspor yang lebih baik dimulai dari
+              <em>asalnya.</em>
             </h2>
-            <p>
+            <p data-i18n="about.story.p1">
               Putri Nusantara hadir untuk memperkenalkan kekayaan kopi Indonesia
               melalui green bean yang dipilih dengan cermat. Kami membangun
               hubungan yang bertumbuh bersama petani, mitra pengolahan, dan
               pembeli internasional.
             </p>
-            <p>
+            <p data-i18n="about.story.p2">
               Dengan perhatian pada konsistensi, transparansi, dan kesiapan
               ekspor, kami merawat setiap lot agar karakter khas asalnya tetap
               sampai ke tujuan.
             </p>
             <div class="story-signature">
               <span class="signature-line"></span>
-              <p>
-                <strong>Putri Nusantara</strong><br />Indonesian Coffee Export
-                Company
+              <p data-i18n="about.story.signature">
+                <strong>Putri Nusantara</strong><br />Perusahaan Ekspor Kopi
+                Indonesia
               </p>
             </div>
           </div>
@@ -114,9 +115,9 @@
             </div>
             <div class="origin-card glass-card">
               <span class="origin-pin" aria-hidden="true">✦</span>
-              <p>
-                <strong>Indonesia</strong><br />A landscape of distinct coffee
-                origins.
+              <p data-i18n="about.origin.card">
+                <strong>Indonesia</strong><br />Lanskap dengan karakter kopi
+                yang khas di tiap daerahnya.
               </p>
             </div>
           </div>
@@ -129,9 +130,9 @@
       >
         <div class="container">
           <div class="section-heading centered reveal" data-reveal="fade-up">
-            <p class="eyebrow">What guides us</p>
-            <h2 id="values-title">Built around enduring <em>values.</em></h2>
-            <p>
+            <p class="eyebrow" data-i18n="about.values.eyebrow">Yang memandu kami</p>
+            <h2 id="values-title" data-i18n="about.values.title">Dibangun di atas <em>nilai-nilai</em> yang abadi.</h2>
+            <p data-i18n="about.values.desc">
               Keempat prinsip ini menjaga cara kami memilih, memproses, dan
               memperkenalkan kopi Indonesia ke pasar dunia.
             </p>
@@ -150,8 +151,8 @@
                 </svg>
               </div>
               <span class="card-number">01</span>
-              <h3>Sumber Terpercaya</h3>
-              <p>
+              <h3 data-i18n="about.value1.title">Sumber Terpercaya</h3>
+              <p data-i18n="about.value1.desc">
                 Dipilih langsung dari petani lokal terbaik dengan standar
                 kualitas yang terjaga.
               </p>
@@ -164,8 +165,8 @@
                 </svg>
               </div>
               <span class="card-number">02</span>
-              <h3>Proses Higienis</h3>
-              <p>
+              <h3 data-i18n="about.value2.title">Proses Higienis</h3>
+              <p data-i18n="about.value2.desc">
                 Diproses melalui sistem produksi yang bersih, aman, dan memenuhi
                 standar operasional.
               </p>
@@ -180,8 +181,8 @@
                 </svg>
               </div>
               <span class="card-number">03</span>
-              <h3>Jaminan Mutu</h3>
-              <p>
+              <h3 data-i18n="about.value3.title">Jaminan Mutu</h3>
+              <p data-i18n="about.value3.desc">
                 Setiap produk melewati proses inspeksi dan kurasi untuk
                 memastikan kualitas terbaik.
               </p>
@@ -196,8 +197,8 @@
                 </svg>
               </div>
               <span class="card-number">04</span>
-              <h3>Kemitraan Berkelanjutan</h3>
-              <p>
+              <h3 data-i18n="about.value4.title">Kemitraan Berkelanjutan</h3>
+              <p data-i18n="about.value4.desc">
                 Mendukung kesejahteraan petani melalui praktik bisnis yang adil,
                 transparan, dan berkelanjutan.
               </p>
@@ -210,11 +211,11 @@
       <section class="section gallery-section" aria-labelledby="gallery-title">
         <div class="container">
           <div class="section-heading centered reveal" data-reveal="fade-up">
-            <p class="eyebrow">Behind the beans</p>
-            <h2 id="gallery-title">
+            <p class="eyebrow" data-i18n="about.gallery.eyebrow">Di balik biji kopi</p>
+            <h2 id="gallery-title" data-i18n="about.gallery.title">
               Dari pembibitan menuju <em>kebun yang terus tumbuh.</em>
             </h2>
-            <p>
+            <p data-i18n="about.gallery.desc">
               Sekilas proses di lapangan — bagaimana setiap bibit dirawat
               sebelum menjadi kopi yang siap diekspor.
             </p>
@@ -222,7 +223,7 @@
 
           <div class="gallery-grid">
             <button
-              class="gallery-item feature reveal"
+              class="gallery-item reveal"
               data-reveal="zoom-in"
               type="button"
               data-gallery-open
@@ -252,7 +253,7 @@
               <span class="gallery-item-caption">Dirawat Setiap Hari</span>
             </button>
             <button
-              class="gallery-item tall reveal"
+              class="gallery-item reveal"
               data-reveal="fade-left"
               type="button"
               data-gallery-open
@@ -290,14 +291,14 @@
               data-caption="Menyatu dengan Alam"
             >
               <img
-                src="assets/galeri4.jpeg"
+                src="assets/galeri5.jpeg"
                 alt="Kebun pembibitan kopi yang menyatu dengan alam sekitar"
                 loading="lazy"
               />
               <span class="gallery-item-caption">Menyatu dengan Alam</span>
             </button>
             <button
-              class="gallery-item wide reveal"
+              class="gallery-item reveal"
               data-reveal="fade-up"
               type="button"
               data-gallery-open
@@ -305,7 +306,7 @@
               data-caption="Kebun yang Terus Berkembang"
             >
               <img
-                src="assets/galeri5.jpeg"
+                src="assets/galeri6.jpeg"
                 alt="Kebun kopi Putri Nusantara yang terus berkembang"
                 loading="lazy"
               />
@@ -320,9 +321,9 @@
       <section class="quote-band" aria-label="Pernyataan Putri Nusantara">
         <div class="container reveal" data-reveal="zoom-in">
           <span class="quote-mark" aria-hidden="true">“</span>
-          <p>
-            We believe the strongest coffee partnerships are made with clarity,
-            care, and a shared respect for origin.
+          <p data-i18n="about.quote">
+            Kami percaya kemitraan kopi yang paling kuat lahir dari kejelasan,
+            perhatian, dan rasa hormat bersama terhadap asalnya.
           </p>
         </div>
       </section>
@@ -341,8 +342,9 @@
             height="44"
           /><span>Putri <strong>Nusantara</strong></span></a
         >
-        <p>
-          Premium Indonesian coffee, thoughtfully sourced for the global market.
+        <p data-i18n="footer.tagline">
+          Kopi Indonesia premium, dipilih dengan penuh perhatian untuk pasar
+          global.
         </p>
         <div class="social-links" aria-label="Media sosial">
           <a href="#" aria-label="Instagram" title="Instagram"
@@ -366,8 +368,8 @@
         </div>
       </div>
       <div class="container footer-bottom">
-        <small>Copyright © 2026 Putri Nusantara. All Rights Reserved.</small
-        ><a href="#top">Back to top <span aria-hidden="true">↑</span></a>
+        <small data-i18n="footer.copyright">Copyright © 2026 Putri Nusantara. Seluruh hak cipta dilindungi.</small
+        ><a href="#top" data-i18n="footer.backtotop">Kembali ke atas <span aria-hidden="true">↑</span></a>
       </div>
     </footer>
     <button class="scroll-top" type="button" aria-label="Kembali ke atas">
@@ -424,15 +426,15 @@
         >
           ×
         </button>
-        <p class="eyebrow">Ajukan Permintaan</p>
-        <h3 id="requestModalTitle">Ceritakan kebutuhan Anda</h3>
-        <p class="request-modal-lead">
+        <p class="eyebrow" data-i18n="modal.eyebrow">Ajukan Permintaan</p>
+        <h3 id="requestModalTitle" data-i18n="modal.title">Ceritakan kebutuhan Anda</h3>
+        <p class="request-modal-lead" data-i18n="modal.lead">
           Isi form singkat ini, permintaan Anda akan langsung dibuka lewat
           aplikasi email menuju tim kami.
         </p>
         <form id="requestForm" novalidate>
           <div class="form-field">
-            <label for="reqName">Nama</label
+            <label for="reqName" data-i18n="modal.label.name">Nama</label
             ><input
               type="text"
               id="reqName"
@@ -442,7 +444,7 @@
             />
           </div>
           <div class="form-field">
-            <label for="reqEmail">Email</label
+            <label for="reqEmail" data-i18n="modal.label.email">Email</label
             ><input
               type="email"
               id="reqEmail"
@@ -452,7 +454,7 @@
             />
           </div>
           <div class="form-field">
-            <label for="reqMessage">Permintaan</label
+            <label for="reqMessage" data-i18n="modal.label.message">Permintaan</label
             ><textarea
               id="reqMessage"
               name="message"
@@ -460,7 +462,7 @@
               required
             ></textarea>
           </div>
-          <button type="submit" class="button button-primary request-submit">
+          <button type="submit" class="button button-primary request-submit" data-i18n="modal.submit">
             Kirim Permintaan <span aria-hidden="true">→</span>
           </button>
           <p class="request-modal-note" id="requestModalNote" role="status"></p>
@@ -469,5 +471,6 @@
     </div>
 
     <script src="js/script.js"></script>
+    <script src="js/i18n.js"></script>
   </body>
 </html>

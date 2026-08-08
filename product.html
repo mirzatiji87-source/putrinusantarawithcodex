@@ -1,24 +1,62 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="id">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Eksplorasi pilihan green bean Robusta dan Arabica dari Putri Nusantara." />
+    <meta
+      name="description"
+      content="Eksplorasi pilihan green bean Robusta dan Arabica dari Putri Nusantara."
+    />
     <title>Produk | Putri Nusantara</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <div class="site-loader" id="site-loader" aria-hidden="true"><div class="loader-mark"><span></span><span></span></div><p>Putri Nusantara</p></div>
+    <div class="site-loader" id="site-loader" aria-hidden="true">
+      <div class="loader-mark"><span></span><span></span></div>
+      <p>Putri Nusantara</p>
+    </div>
 
     <header class="site-header" id="top">
       <div class="container nav-wrap">
-        <a class="brand" href="index.html" aria-label="Putri Nusantara, kembali ke beranda"><img src="assets/logo-putri.jpeg" alt="" width="44" height="44" /><span>Putri <strong>Nusantara</strong></span></a>
-        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation" aria-label="Buka navigasi"><span></span><span></span><span></span></button>
-        <nav class="primary-nav" id="primary-navigation" aria-label="Navigasi utama">
-          <a href="index.html">Beranda</a><a href="about.html">Tentang Kami</a><a class="active" href="product.html">Produk</a><a href="contact.html">Kontak</a>
+        <a
+          class="brand"
+          href="index.html"
+          aria-label="Putri Nusantara, kembali ke beranda"
+          ><img
+            src="assets/logo-putri.jpeg"
+            alt=""
+            width="44"
+            height="44"
+          /><span>Putri <strong>Nusantara</strong></span></a
+        >
+        <button
+          class="menu-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="primary-navigation"
+          aria-label="Buka navigasi"
+        >
+          <span></span><span></span><span></span>
+        </button>
+        <nav
+          class="primary-nav"
+          id="primary-navigation"
+          aria-label="Navigasi utama"
+        >
+          <a href="index.html" data-i18n="nav.beranda">Beranda</a
+          ><a href="about.html" data-i18n="nav.about">Tentang Kami</a
+          ><a class="active" href="product.html" data-i18n="nav.product"
+            >Produk</a
+          ><a href="contact.html" data-i18n="nav.contact">Kontak</a>
+          <button type="button" class="nav-request-btn" data-open-request>
+            <span data-i18n="nav.request">Ajukan Permintaan</span>
+          </button>
         </nav>
       </div>
     </header>
@@ -27,57 +65,154 @@
       <section class="page-hero product-hero" aria-labelledby="product-title">
         <div class="page-hero-pattern" aria-hidden="true"></div>
         <div class="container page-hero-content">
-          <p class="breadcrumb reveal" data-reveal="fade-up"><a href="index.html">Beranda</a><span aria-hidden="true">/</span> Produk</p>
-          <p class="eyebrow light reveal" data-reveal="fade-up">Curated green coffee</p>
-          <h1 id="product-title" class="reveal" data-reveal="fade-up">Our <em>Products</em></h1>
-          <p class="page-hero-lead reveal" data-reveal="fade-up">Distinct Indonesian green beans selected with an export-ready attention to quality, profile, and consistency.</p>
+          <p class="breadcrumb reveal" data-reveal="fade-up">
+            <a href="index.html" data-i18n="nav.beranda">Beranda</a
+            ><span aria-hidden="true">/</span>
+            <span data-i18n="product.breadcrumb">Produk</span>
+          </p>
+          <p
+            class="eyebrow light reveal"
+            data-reveal="fade-up"
+            data-i18n="product.hero.eyebrow"
+          >
+            Kopi hijau pilihan
+          </p>
+          <h1
+            id="product-title"
+            class="reveal"
+            data-reveal="fade-up"
+            data-i18n="product.hero.title"
+          >
+            Produk <em>Kami</em>
+          </h1>
+          <p
+            class="page-hero-lead reveal"
+            data-reveal="fade-up"
+            data-i18n="product.hero.lead"
+          >
+            Green bean Indonesia dengan karakter khas, dipilih dengan standar
+            ekspor yang memperhatikan kualitas, profil rasa, dan konsistensi.
+          </p>
         </div>
       </section>
 
-      <section class="section products-section" aria-labelledby="products-heading">
+      <section
+        class="section products-section"
+        aria-labelledby="products-heading"
+      >
         <div class="container">
           <div class="products-intro reveal" data-reveal="fade-up">
-            <p class="eyebrow">Selection</p>
-            <h2 id="products-heading">A green bean portfolio with a <em>clear point of view.</em></h2>
-            <p>Setiap lot merupakan undangan untuk mengeksplorasi karakter khas kopi Indonesia. Hubungi tim kami untuk asal, ketersediaan, dan spesifikasi lot terbaru.</p>
+            <p class="eyebrow" data-i18n="product.intro.eyebrow">
+              Pilihan Kami
+            </p>
+            <h2 id="products-heading" data-i18n="product.intro.title">
+              Portofolio green bean dengan <em>karakter yang jelas.</em>
+            </h2>
+            <p data-i18n="product.intro.desc">
+              Setiap lot merupakan undangan untuk mengeksplorasi karakter khas
+              kopi Indonesia. Hubungi tim kami untuk asal, ketersediaan, dan
+              spesifikasi lot terbaru.
+            </p>
           </div>
 
           <div class="product-grid">
             <article class="product-card reveal" data-reveal="fade-right">
               <div class="product-image">
-                <img src="assets/full-wash-green-bean.png" alt="Green bean hasil proses full wash" loading="lazy" />
+                <img
+                  src="assets/full-wash-green-bean.png"
+                  alt="Green bean hasil proses full wash"
+                  loading="lazy"
+                />
                 <span class="product-index">01</span>
-                <span class="product-type">Green Coffee</span>
+                <span class="product-type" data-i18n="product.type"
+                  >Kopi Hijau</span
+                >
               </div>
               <div class="product-body">
-                <div class="product-title-row"><h3>Green Bean <em>Robusta</em></h3><span class="product-arrow" aria-hidden="true">↗</span></div>
-                <p class="product-description">Karakter yang kuat dan body yang penuh, dipilih untuk memberikan fondasi yang konsisten pada espresso maupun blend bernuansa bold.</p>
+                <div class="product-title-row">
+                  <h3>Green Bean <em>Robusta</em></h3>
+                  <span class="product-arrow" aria-hidden="true">↗</span>
+                </div>
+                <p class="product-description" data-i18n="product.card1.desc">
+                  Karakter yang kuat dan body yang penuh, dipilih untuk
+                  memberikan fondasi yang konsisten pada espresso maupun blend
+                  bernuansa bold.
+                </p>
                 <dl class="spec-list">
-                  <div><dt>Origin</dt><dd>Indonesia</dd></div>
-                  <div><dt>Process</dt><dd>Natural / Washed</dd></div>
-                  <div><dt>Profile</dt><dd>Bold · Full body</dd></div>
-                  <div><dt>Availability</dt><dd>By inquiry</dd></div>
+                  <div>
+                    <dt data-i18n="product.spec.origin">Asal</dt>
+                    <dd>Indonesia</dd>
+                  </div>
+                  <div>
+                    <dt data-i18n="product.spec.process">Proses</dt>
+                    <dd>Natural / Washed</dd>
+                  </div>
+                  <div>
+                    <dt data-i18n="product.spec.profile">Profil</dt>
+                    <dd data-i18n="product.card1.profile">
+                      Tegas · Body penuh
+                    </dd>
+                  </div>
+                  <div>
+                    <dt data-i18n="product.spec.availability">Ketersediaan</dt>
+                    <dd data-i18n="product.availability">Sesuai permintaan</dd>
+                  </div>
                 </dl>
-                <a class="text-link product-link" href="contact.html">Request details <span aria-hidden="true">→</span></a>
+                <a
+                  class="text-link product-link"
+                  href="contact.html"
+                  data-i18n="product.link"
+                  >Minta detail <span aria-hidden="true">→</span></a
+                >
               </div>
             </article>
 
             <article class="product-card reveal" data-reveal="fade-left">
               <div class="product-image">
-                <img src="assets/green-bean-arabica.jpg" alt="Green bean Arabica pilihan" loading="lazy" />
+                <img
+                  src="assets/green-bean-arabica.jpg"
+                  alt="Green bean Arabica pilihan"
+                  loading="lazy"
+                />
                 <span class="product-index">02</span>
-                <span class="product-type">Green Coffee</span>
+                <span class="product-type" data-i18n="product.type"
+                  >Kopi Hijau</span
+                >
               </div>
               <div class="product-body">
-                <div class="product-title-row"><h3>Green Bean <em>Arabica</em></h3><span class="product-arrow" aria-hidden="true">↗</span></div>
-                <p class="product-description">Lot Arabica pilihan dengan kompleksitas aroma, acidity yang hidup, dan karakter asal yang elegan untuk kebutuhan specialty maupun premium blend.</p>
+                <div class="product-title-row">
+                  <h3>Green Bean <em>Arabica</em></h3>
+                  <span class="product-arrow" aria-hidden="true">↗</span>
+                </div>
+                <p class="product-description" data-i18n="product.card2.desc">
+                  Lot Arabica pilihan dengan kompleksitas aroma, acidity yang
+                  hidup, dan karakter asal yang elegan untuk kebutuhan specialty
+                  maupun premium blend.
+                </p>
                 <dl class="spec-list">
-                  <div><dt>Origin</dt><dd>Indonesia</dd></div>
-                  <div><dt>Process</dt><dd>Washed / Natural</dd></div>
-                  <div><dt>Profile</dt><dd>Complex · Refined</dd></div>
-                  <div><dt>Availability</dt><dd>By inquiry</dd></div>
+                  <div>
+                    <dt data-i18n="product.spec.origin">Asal</dt>
+                    <dd>Indonesia</dd>
+                  </div>
+                  <div>
+                    <dt data-i18n="product.spec.process">Proses</dt>
+                    <dd>Washed / Natural</dd>
+                  </div>
+                  <div>
+                    <dt data-i18n="product.spec.profile">Profil</dt>
+                    <dd data-i18n="product.card2.profile">Kompleks · Halus</dd>
+                  </div>
+                  <div>
+                    <dt data-i18n="product.spec.availability">Ketersediaan</dt>
+                    <dd data-i18n="product.availability">Sesuai permintaan</dd>
+                  </div>
                 </dl>
-                <a class="text-link product-link" href="contact.html">Request details <span aria-hidden="true">→</span></a>
+                <a
+                  class="text-link product-link"
+                  href="contact.html"
+                  data-i18n="product.link"
+                  >Minta detail <span aria-hidden="true">→</span></a
+                >
               </div>
             </article>
           </div>
@@ -86,25 +221,145 @@
 
       <section class="product-note section-soft">
         <div class="container product-note-inner reveal" data-reveal="zoom-in">
-          <div><p class="eyebrow">Made for your program</p><h2>Looking for a tailored coffee profile?</h2></div>
-          <a class="button button-primary" href="contact.html">Talk to our team <span aria-hidden="true">→</span></a>
+          <div>
+            <p class="eyebrow" data-i18n="product.note.eyebrow">
+              Dibuat untuk kebutuhan Anda
+            </p>
+            <h2 data-i18n="product.note.title">
+              Mencari profil kopi yang disesuaikan?
+            </h2>
+          </div>
+          <a
+            class="button button-primary"
+            href="contact.html"
+            data-i18n="product.note.cta"
+            >Hubungi tim kami <span aria-hidden="true">→</span></a
+          >
         </div>
       </section>
     </main>
 
     <footer class="site-footer">
       <div class="container footer-main">
-        <a class="brand footer-brand" href="index.html" aria-label="Putri Nusantara, beranda"><img src="assets/logo-putri.jpeg" alt="" width="44" height="44" /><span>Putri <strong>Nusantara</strong></span></a>
-        <p>Premium Indonesian coffee, thoughtfully sourced for the global market.</p>
+        <a
+          class="brand footer-brand"
+          href="index.html"
+          aria-label="Putri Nusantara, beranda"
+          ><img
+            src="assets/logo-putri.jpeg"
+            alt=""
+            width="44"
+            height="44"
+          /><span>Putri <strong>Nusantara</strong></span></a
+        >
+        <p data-i18n="footer.tagline">
+          Kopi Indonesia premium, dipilih dengan penuh perhatian untuk pasar
+          global.
+        </p>
         <div class="social-links" aria-label="Media sosial">
-          <a href="#" aria-label="Instagram" title="Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"></rect><circle cx="12" cy="12" r="4"></circle><circle cx="17.5" cy="6.5" r="1"></circle></svg></a>
-          <a href="#" aria-label="Facebook" title="Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14.5 21v-8h2.8l.4-3h-3.2V8.1c0-.9.3-1.6 1.7-1.6H18V3.8c-.3 0-1.4-.1-2.6-.1-2.6 0-4.4 1.6-4.4 4.5V10H8v3h3v8h3.5Z"></path></svg></a>
-          <a href="#" aria-label="LinkedIn" title="LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.3 8.3H3V21h3.3V8.3ZM4.7 3A1.9 1.9 0 1 0 4.7 6.8 1.9 1.9 0 0 0 4.7 3ZM21 13.7c0-3.8-2-5.6-4.8-5.6-2.2 0-3.2 1.2-3.8 2V8.3H9.1V21h3.3v-6.3c0-1.7.3-3.4 2.4-3.4 2.1 0 2.1 2 2.1 3.5V21H21v-7.3Z"></path></svg></a>
+          <a href="#" aria-label="Instagram" title="Instagram"
+            ><svg viewBox="0 0 24 24" aria-hidden="true">
+              <rect x="3" y="3" width="18" height="18" rx="5"></rect>
+              <circle cx="12" cy="12" r="4"></circle>
+              <circle cx="17.5" cy="6.5" r="1"></circle></svg
+          ></a>
+          <a href="#" aria-label="Facebook" title="Facebook"
+            ><svg viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                d="M14.5 21v-8h2.8l.4-3h-3.2V8.1c0-.9.3-1.6 1.7-1.6H18V3.8c-.3 0-1.4-.1-2.6-.1-2.6 0-4.4 1.6-4.4 4.5V10H8v3h3v8h3.5Z"
+              ></path></svg
+          ></a>
+          <a href="#" aria-label="LinkedIn" title="LinkedIn"
+            ><svg viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                d="M6.3 8.3H3V21h3.3V8.3ZM4.7 3A1.9 1.9 0 1 0 4.7 6.8 1.9 1.9 0 0 0 4.7 3ZM21 13.7c0-3.8-2-5.6-4.8-5.6-2.2 0-3.2 1.2-3.8 2V8.3H9.1V21h3.3v-6.3c0-1.7.3-3.4 2.4-3.4 2.1 0 2.1 2 2.1 3.5V21H21v-7.3Z"
+              ></path></svg
+          ></a>
         </div>
       </div>
-      <div class="container footer-bottom"><small>Copyright © 2026 Putri Nusantara. All Rights Reserved.</small><a href="#top">Back to top <span aria-hidden="true">↑</span></a></div>
+      <div class="container footer-bottom">
+        <small data-i18n="footer.copyright"
+          >Copyright © 2026 Putri Nusantara. Seluruh hak cipta
+          dilindungi.</small
+        ><a href="#top" data-i18n="footer.backtotop"
+          >Kembali ke atas <span aria-hidden="true">↑</span></a
+        >
+      </div>
     </footer>
-    <button class="scroll-top" type="button" aria-label="Kembali ke atas"><span aria-hidden="true">↑</span></button>
+    <button class="scroll-top" type="button" aria-label="Kembali ke atas">
+      <span aria-hidden="true">↑</span>
+    </button>
+
+    <!-- Modal form permintaan -->
+    <div class="request-modal" id="requestModal" aria-hidden="true">
+      <div class="request-modal-overlay" data-close-request></div>
+      <div
+        class="request-modal-panel"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="requestModalTitle"
+      >
+        <button
+          type="button"
+          class="request-modal-close"
+          data-close-request
+          aria-label="Tutup form permintaan"
+        >
+          ×
+        </button>
+        <p class="eyebrow" data-i18n="modal.eyebrow">Ajukan Permintaan</p>
+        <h3 id="requestModalTitle" data-i18n="modal.title">
+          Ceritakan kebutuhan Anda
+        </h3>
+        <p class="request-modal-lead" data-i18n="modal.lead">
+          Isi form singkat ini, permintaan Anda akan langsung dibuka lewat
+          aplikasi email menuju tim kami.
+        </p>
+        <form id="requestForm" novalidate>
+          <div class="form-field">
+            <label for="reqName" data-i18n="modal.label.name">Nama</label>
+            <input
+              type="text"
+              id="reqName"
+              name="name"
+              autocomplete="name"
+              required
+            />
+          </div>
+          <div class="form-field">
+            <label for="reqEmail" data-i18n="modal.label.email">Email</label>
+            <input
+              type="email"
+              id="reqEmail"
+              name="email"
+              autocomplete="email"
+              required
+            />
+          </div>
+          <div class="form-field">
+            <label for="reqMessage" data-i18n="modal.label.message"
+              >Permintaan</label
+            >
+            <textarea
+              id="reqMessage"
+              name="message"
+              rows="4"
+              required
+            ></textarea>
+          </div>
+          <button
+            type="submit"
+            class="button button-primary request-submit"
+            data-i18n="modal.submit"
+          >
+            Kirim Permintaan <span aria-hidden="true">→</span>
+          </button>
+          <p class="request-modal-note" id="requestModalNote" role="status"></p>
+        </form>
+      </div>
+    </div>
+
     <script src="js/script.js"></script>
+    <script src="js/i18n.js"></script>
   </body>
 </html>
